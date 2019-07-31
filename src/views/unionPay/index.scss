@@ -1,0 +1,71 @@
+.add_bank_card {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-right: 10px;
+}
+
+.add_bank_card .add_bank_card_icon {
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.bank_content {
+  width: 92%;
+  padding: 15px;
+}
+.card {
+  height: 160px;
+  background: url(../../assets/bg_card.png) no-repeat;
+  background-size: auto 100%;
+}
+
+.card .card_number {
+  width: 300px;
+  padding-top: 24px;
+  height: 63px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  line-height: 30px;
+}
+
+.card_number img {
+  float: left;
+  width: 63px;
+  height: 63px;
+}
+
+.card_number .txt0 {
+  float: right;
+  font-size: 16px;
+}
+
+.card_number span {
+  font-size: 11px;
+}
+
+.card .bottom {
+  margin-top: 30px;
+}
+
+.card .serial_number {
+  color: #fff;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.card .delete_card {
+  margin-right: 20px;
+  font-size: 16px;
+  color: white;
+  text-decoration: underline;
+}
+
+.change_card {
+  margin-top: 20px;
+}
+
+.submit_btn {
+  margin-top: 40px;
+}

@@ -1,0 +1,48 @@
+.title {
+  font-size: 24px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.title .success_icon {
+  vertical-align: middle;
+}
+
+.jump_content {
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.jump_content .count_down {
+  margin-bottom: 10px;
+}
+
+.jump_content .count_down span {
+  font-size: 32px;
+  margin-right: 4px;
+}
+
+.jump_content .jump_btn {
+  margin-top: 40px;
+}
+
+.pay_info_content {
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.pay_info_content .amount {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pay_info_content .order_number, .pay_info_content .order_time {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.pay_info_content .amount span {
+  font-size: 24px;
+}
