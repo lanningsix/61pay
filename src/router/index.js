@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import payChoose from '../views/payChoose/index.vue'
-import payConfirm from '../views/payConfirm/index.vue'
-import payResult from '../views/payResult/index.vue'
 import unionPay from '../views/unionPay/index.vue'
 import bankCard from '../views/unionPay/bankCard/index.vue'
 // import deleteBankCard from '../views/unionPay/deleteBankCard/index.vue'
@@ -16,9 +13,29 @@ export default new Router({
       component: () => import('@/views/404')
     },
     {
-      path: '',
+      path: '/home',
+      component: () => import('@/views/home/index.vue'),
+      meta: {
+        title: '确认个人信息'
+      }
+    },
+    {
+      path: '/orderProgress',
+      name: 'orderProgress',
+      component: () => import('@/views/orderProgress/index.vue'),
+      children: [{
+        path: 'signUp',
+        name: 'signUp',
+        component: () => import('@/views/orderProgress/signUp/index.vue'),
+        meta: {
+          title: '确认个人信息'
+        }
+      }]
+    },
+    {
+      path: '/payChoose',
       name: 'payChoose',
-      component: payChoose,
+      component: () => import('@/views/payChoose/index.vue'),
       meta: {
         title: '支付学费'
       }
@@ -26,7 +43,7 @@ export default new Router({
     {
       path: '/payConfirm',
       name: 'payConfirm',
-      component: payConfirm,
+      component: () => import('@/views/payConfirm/index.vue'),
       meta: {
         title: '支付确认'
       }
@@ -34,7 +51,7 @@ export default new Router({
     {
       path: '/payResult',
       name: 'payResult',
-      component: payResult,
+      component: () => import('@/views/payResult/index.vue'),
       meta: {
         title: '支付成功'
       }

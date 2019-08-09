@@ -1,23 +1,86 @@
-.title {
-  margin-top: 60px;
-  font-size: 20px;
+
+.step_box {
+  padding: 20px 40px 14px 50px;
 }
 
-.pay_choose_content {
-  margin-top: 20px;
+.content_img {
+  width: 100%
 }
 
-.pay_choose_content .pay_icon {
-  width: 30px;
-  vertical-align: middle;
-  margin-right: 12px;
+.pay_choose {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 7.5px;
+  height: 397.5px;
 }
 
-.pay_choose_content .recommend_icon {
-  margin-left: 20px;
+.confirmBtn {
+  background-image: linear-gradient(90deg,
+    #ff4646 0%,
+    #ff6c39 100%),
+  linear-gradient(
+      #ff5f45,
+      #ff5f45);
+  border-radius: 21.5px;
+  width: 270px;
+  height: 43px;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .submit_btn {
-  margin-top: 100px;
+  margin-top: 63px;
 }
 
+.pay_choose_content {
+  //margin-top: 20px;
+  padding-top: 93px;
+  padding-right: 34px;
+  padding-left: 34px;
+}
+
+.pay_choose_content .vx_icon {
+  width: 22px;
+  vertical-align: middle;
+  //margin-right: 12px;
+}
+
+.pay_choose_content .bank_icon {
+  width: 19px;
+  vertical-align: middle;
+  //margin-right: 12px;
+}
+
+.pay_choose_content .ali_icon {
+  width: 20px;
+  vertical-align: middle;
+  //margin-right: 12px;
+}
+
+.pay_choose_content .pay_style {
+  margin-left: 11.5px;
+  font-size: 14px;
+  //line-height: 20.5px;
+  color: #333333;
+}
+
+.pay_choose_content .recommend_icon {
+  margin-left: 12px;
+  padding: 2.5px 4px;
+  width: 29px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #ffa474;
+  color: #ffffff;
+  font-size: 10.65px;
+  line-height: 31.5px;
+}
+
+.pay_choose_content .pay_title {
+  font-size: 18px;
+  text-align: center;
+  color: #333333;
+  font-weight: bolder;
+  line-height: 30.5px;
+  margin-bottom: 6px;
+}

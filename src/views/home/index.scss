@@ -1,0 +1,112 @@
+.home {
+  background-color: #f8f8f8 !important;
+  min-height: 100vh;
+}
+.header {
+  width: 100%;
+  height: 258px;
+  background-size: 100% auto;
+  position: relative;
+}
+
+.header .course_hours {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+
+.header .course_hours .left_line {
+  position: absolute;
+  width: 3px;
+  height: 13px;
+  background: rgba(255, 88, 31, 1);
+  opacity: 0.66;
+  top: -13px;
+  left: 16px;
+}
+
+.header .course_hours .right_line {
+  position: absolute;
+  width: 3px;
+  height: 13px;
+  background: rgba(255, 88, 31, 1);
+  opacity: 0.66;
+  top: -13px;
+  right: 16px;
+}
+
+.header .course_hours .content {
+  width: 72px;
+  height: 26px;
+  background: linear-gradient(0deg, rgba(255, 111, 41, 1), rgba(255, 64, 20, 1));
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 26px;
+  text-align: center;
+}
+
+.course_info {
+  height: 130px;
+  background-color: white;
+  padding: 18px;
+}
+
+.course_info .price {
+  .current_price {
+    .price_icon {
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(255, 73, 40, 1);
+      line-height: 30px;
+    }
+    .price_content {
+      font-size: 30px;
+      font-weight: bold;
+      color: rgba(255, 73, 40, 1);
+      line-height: 30px;
+    }
+    .price_offer {
+      width: 120px;
+      height: 34px;
+      background-color: #ffe0db;
+      border-radius: 17px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 73, 40, 1);
+      line-height: 34px;
+      padding: 4px 8px;
+    }
+  }
+  .original_price {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    line-height: 24px;
+  }
+}
+
+.course_info .package_info {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  line-height: 30px;
+}
+
+.submit_btn {
+  width: 270px;
+  height: 44px;
+  background: linear-gradient(90deg, rgba(255, 70, 70, 1), rgba(255, 108, 57, 1));
+  box-shadow: 0px 5px 9px 0px rgba(255, 255, 255, 0.21);
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 44px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 86px;
+  letter-spacing: 2px;
+}

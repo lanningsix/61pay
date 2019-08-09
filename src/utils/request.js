@@ -1,5 +1,7 @@
+'use strict'
 import axios from 'axios'
-import { Toast } from 'vant'
+// import { Toast } from 'vant'
+
 // 创建axios实例
 const service = axios.create({
   baseURL: process.env.BASE_API, // api的base_url
@@ -24,38 +26,26 @@ service.interceptors.request.use(config => {
 // respone拦截器
 service.interceptors.response.use(
   response => {
-    /**
-     * code为非0是抛错
-     */
-    // const res = response.data
-    // if (res.code !== 0) {
-    //   Toast({
-    //     Toast: res.Toast,
-    //     type: 'error',
-    //     duration: 5 * 1000
-    //   })
-    //   return Promise.reject('error')
-    // } else {}
-    switch (response.data.code) {
-      case 20001:
-        Toast('服务器异常')
-        break
-      case 20011:
-        Toast('输入参数有误')
-        break
-      case 20012:
-        Toast('文件后缀丢失')
-        break
-      case 20013:
-        Toast('不允许上传的文件类型')
-        break
-      case 20014:
-        Toast('文件大小超出限制')
-        break
-      case 20015:
-        Toast('不支持压缩')
-        break
-    }
+    // switch (response.data.code) {
+    //   case 20001:
+    //     Toast('服务器异常')
+    //     break
+    //   case 20011:
+    //     Toast('输入参数有误')
+    //     break
+    //   case 20012:
+    //     Toast('文件后缀丢失')
+    //     break
+    //   case 20013:
+    //     Toast('不允许上传的文件类型')
+    //     break
+    //   case 20014:
+    //     Toast('文件大小超出限制')
+    //     break
+    //   case 20015:
+    //     Toast('不支持压缩')
+    //     break
+    // }
     return response.data
   },
   error => {

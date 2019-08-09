@@ -2,33 +2,28 @@
   <div>
     <van-row type="flex" justify="end" align="center" class="add_bank_card">
       <router-link to="/bankcard/add">
-        <van-icon name="add-o" class="add_bank_card_icon" />添加银行卡
+        <img :src="cardAdd" class="add_bank_card_icon"/><span>添加银行卡</span>
       </router-link>
     </van-row>
 
     <div class="bank_content">
       <div class="card" v-if="bankCardList.length > 0">
         <div class="card_number">
-          <img class="img-responsive" :src="cardImg" />
-          <div class="txt0">
-            <span>卡号：</span>
-            <br />
-            {{bankCardList[bankCardIndex].cardNumber}}
-          </div>
+          <div class="bank_title">当前已绑银行卡账号：</div>
+          <div class="bank_id">{{bankCardList[bankCardIndex].cardNumber}}</div>
         </div>
-        <van-row class="bottom" type="flex" justify="space-between" align="center">
-          <div class="serial_number">①</div>
           <router-link to="/bankcard/delete">
-            <div class="delete_card">解绑卡片</div>
+            <span class="delete_card">解绑卡片</span>
           </router-link>
-        </van-row>
       </div>
 
       <van-row class="text_align_center change_card">
-        <van-button type="primary" size="small" round @click="changeBankCardHandle">切换下一张</van-button>
+        <div @click="changeBankCardHandle">
+          <img :src="changeCard" class="change_card_img"><span>切换下一张</span>
+        </div>
       </van-row>
     </div>
-    <van-divider :style="{borderColor: '#1989fa', padding: '0 15px'}" />
+    <div class="divide"></div>
 
     <van-cell-group>
       <van-field v-model="amount" center readonly label="支付金额：">
@@ -46,9 +41,9 @@
       </van-field>
     </van-cell-group>
 
-    <van-row class="text_align_center submit_btn btn">
-      <van-button type="primary" @click="submitHandle">确认支付</van-button>
-    </van-row>
+    <div class="text_align_center submit_btn">
+      <van-button class="confirmBtn" @click="submitHandle">确认支付</van-button>
+    </div>
   </div>
 </template>
 <script>

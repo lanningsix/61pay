@@ -4,6 +4,8 @@ export default {
   components: {},
   data() {
     return {
+      cardAdd: require('@/assets/bank/addBank.png'),
+      changeCard: require('@/assets/bank/changCard.png'),
       cardImg: require('@/assets/bank_img0.png'),
       bankCardIndex: 0,
       bankCardList: [{
