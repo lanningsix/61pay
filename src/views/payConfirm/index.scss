@@ -1,0 +1,77 @@
+.title {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(255, 94, 61, 1);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.tooltip {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.reload_btn {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(102, 102, 102, 1);
+  text-align: center;
+
+  .reload_icon {
+    display: inline-block;
+    width: 15.5px;
+    height: 12px;
+    background-size: 100%;
+    margin-right: 6px;
+  }
+}
+
+.pay_tip {
+  margin-top: 80px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  text-align: center;
+}
+
+.pay_info_content {
+  margin: 32px 36px 0;
+  font-size: 16px;
+  border-top: 1px solid rgba(196, 196, 196, 1);
+
+  .amount {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+
+    span {
+      font-size: 32px;
+      font-weight: bold;
+      color: rgba(51, 51, 51, 1);
+    }
+  }
+
+  .order_number {
+    margin-top: 24px;
+  }
+
+  .order_number,
+  .order_time {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    margin-left: 38px;
+
+    .label {
+      display: inline-block;
+      width: 80px;
+    }
+
+  }
+}

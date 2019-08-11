@@ -3,8 +3,6 @@ export default {
   components: {},
   data() {
     return {
-      reloadIcon: require('@/assets/reload.png'),
-      amount: 4600
     }
   },
   mounted() {},

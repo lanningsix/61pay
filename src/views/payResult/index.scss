@@ -1,48 +1,86 @@
 .title {
-  font-size: 24px;
-  margin: 40px 0;
+  margin-top: 50px;
   text-align: center;
-}
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
 
-.title .success_icon {
-  vertical-align: middle;
+  .success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 31px;
+    height: 31px;
+    background-size: 100%;
+    margin-right: 10px;
+  }
 }
 
 .jump_content {
-  margin: 40px 0;
-  font-size: 16px;
-  font-weight: 600;
-}
+  margin-top: 50px;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 1);
 
-.jump_content .count_down {
-  margin-bottom: 10px;
-}
+  .count_down {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 12px;
+  }
 
-.jump_content .count_down span {
-  font-size: 32px;
-  margin-right: 4px;
-}
+  .count_down span {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    margin-right: 4px;
+  }
 
-.jump_content .jump_btn {
-  margin-top: 40px;
+  .jump_btn {
+    width: 124px;
+    height: 43px;
+    border: 1px solid rgba(255, 94, 61, 1);
+    box-shadow: 0px 4.5px 9px 0px rgba(255, 255, 255, 0.21);
+    border-radius: 21.5px;
+    font-size: 18px;
+    color: rgba(255, 94, 61, 1);
+    line-height: 43px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }
 
 .pay_info_content {
-  padding: 0 15px;
+  margin: 32px 36px 0;
   font-size: 16px;
-}
+  border-top: 1px solid rgba(196, 196, 196, 1);
 
-.pay_info_content .amount {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+  .amount {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
 
-.pay_info_content .order_number, .pay_info_content .order_time {
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
+    span {
+      font-size: 32px;
+      font-weight: bold;
+      color: rgba(51, 51, 51, 1);
+    }
+  }
 
-.pay_info_content .amount span {
-  font-size: 24px;
+  .order_number {
+    margin-top: 24px;
+  }
+
+  .order_number,
+  .order_time {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    margin-left: 38px;
+
+    .label {
+      display: inline-block;
+      width: 80px;
+    }
+
+  }
 }

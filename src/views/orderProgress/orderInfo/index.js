@@ -4,7 +4,11 @@ export default {
   components: {},
   data() {
     return {
-      districtIcon: require('@/assets/orderProgress/signUp/district.png'),
+      districtIcon: require('@/assets/orderProgress/orderInfo/district.png'),
+      selectedIcon: require('@/assets/orderProgress/orderInfo/selected.png'),
+      notSelectedIcon: require('@/assets/orderProgress/orderInfo/notSelected.png'),
+      editAddressIcon: require('@/assets/orderProgress/orderInfo/editAddress.png'),
+      addAddressIcon: require('@/assets/orderProgress/orderInfo/addAddress.png'),
       addAddressForm: {
         addressee: '',
         phone: '',
@@ -13,7 +17,26 @@ export default {
         detailedAddress: ''
       },
       showAddressPicker: false, // 选择器是否显示
-      areaList: provinceList
+      areaList: provinceList,
+      addressList: [{
+        id: 1,
+        name: '张三',
+        tel: '13000000000',
+        districtName: '北京市北京市和平区',
+        detailedAddress: '文三路 138 号东方通信大厦 7 楼 501 室',
+        districtCode: 110101,
+        isDefault: true
+      },
+      {
+        id: 2,
+        name: '李四',
+        tel: '1310000000',
+        districtName: '北京市北京市和平区',
+        detailedAddress: '文三路 138 号东方通信大厦 7 楼 501 室',
+        districtCode: 110101,
+        isDefault: false
+      }],
+      selectedAddressIndex: 0
     }
   },
   mounted() {

@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="add_address">
+    <!-- <div class="add_address">
       <van-cell-group>
         <van-field v-model="addAddressForm.addressee" label="收件人：" placeholder="请填写收件人姓名" />
         <van-field v-model="addAddressForm.phone" label="手机号：" placeholder="请填写收件手机号码" />
@@ -35,6 +35,37 @@
           placeholder="请填写详细地址"
         />
       </van-cell-group>
+    </div>-->
+
+    <div class="choose_address">
+      <div class="line"></div>
+      <div class="address_list">
+        <div class="address_item" v-for="(item, key) in addressList" :key="key">
+          <div class="checkbox" @click="selectedAddressIndex = key">
+            <img :src="key === selectedAddressIndex ? selectedIcon : notSelectedIcon" alt />
+          </div>
+          <div class="address_item_info">
+            <div class="top">
+              <span class="name">{{item.name}}</span>
+              <span class="tel">{{item.tel}}</span>
+              <span class="default" v-if="item.isDefault">默认</span>
+            </div>
+            <div class="bottom">{{item.districtName + item.detailedAddress}}</div>
+          </div>
+          <div class="edit">
+            <span class="right_line"></span>
+            <span
+              class="edit_address_icon"
+              :style="{'background-image': 'url('+ editAddressIcon +')'}"
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="add_address_btn">
+        <span class="add_address_icon" :style="{'background-image': 'url('+ addAddressIcon +')'}"></span>
+        新增收件地址
+      </div>
     </div>
 
     <div class="submit_btn">
@@ -45,6 +76,7 @@
       <div>请务必填写真实地址信息哦~</div>
     </div>
 
+    <!-- 地址选择器 -->
     <van-popup v-model="showAddressPicker" position="bottom">
       <van-area
         :area-list="areaList"

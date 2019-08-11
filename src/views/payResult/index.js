@@ -3,6 +3,7 @@ export default {
   components: {},
   data() {
     return {
+      paySuccessIcon: require('@/assets/paySuccess.png'),
       countDown: 5,
       amount: 6000
     }

@@ -1,12 +1,15 @@
 .order_info {
   margin-top: 20px;
 }
+
 .user_info {
   padding: 0 43px 0 50px;
+
   div {
     .label {
       letter-spacing: 1px;
     }
+
     font-size: 15px;
     font-weight: 400;
     font-family: SourceHanSansCN-Regular;
@@ -58,33 +61,157 @@
       -webkit-transform: scaleY(0.5);
       transform: scaleY(0.5);
     }
+
     .label {
       flex: none;
       width: 90px;
       color: #323233;
       vertical-align: middle;
     }
+
     .content {
       color: #323233;
       display: inline-block;
+      width: 164px;
     }
+
     .disabled {
       color: #969799;
     }
   }
+
   /deep/ .van-cell-group:after {
     content: none;
   }
+
   /deep/ .van-cell {
     line-height: 34px;
   }
+
   /deep/ .van-cell:not(:last-child):after {
     border-bottom: 1px solid rgba(223, 223, 223, 1);
   }
 }
 
+.choose_address {
+  .line {
+    width: 100%;
+    height: 10px;
+    background: rgba(191, 191, 191, 1);
+    opacity: 0.17;
+  }
+
+  .address_list {
+    .address_item {
+      display: flex;
+      align-items: center;
+      min-height: 76px;
+      padding: 4px 24px;
+
+      .checkbox,
+      .address_item_info,
+      .edit {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .checkbox {
+        margin-right: 16px;
+      }
+
+      .checkbox img {
+        width: 31.5px;
+        height: 31.5px;
+      }
+
+      .address_item_info {
+        width: 240px;
+
+        .top {
+          .name {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            margin-right: 10px;
+            vertical-align: bottom;
+          }
+
+          .tel {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(102, 102, 102, 1);
+            vertical-align: bottom;
+          }
+
+          .default {
+            display: inline-block;
+            text-align: center;
+            background-color: rgba(255, 94, 61, 0.25);
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: 400;
+            padding: 2px 8px;
+            color: #FF5E3D;
+            vertical-align: bottom;
+            margin-left: 10px;
+          }
+        }
+
+        .bottom {
+          width: 170px;
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(51, 51, 51, 1);
+
+        }
+      }
+
+      .edit {
+
+        .right_line {
+          display: inline-block;
+          width: 1px;
+          height: 26px;
+          background: rgba(226, 226, 226, 1);
+          margin-right: 14px;
+          vertical-align: middle;
+        }
+
+        .edit_address_icon {
+          display: inline-block;
+          background-size: 100% 100%;
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+
+        }
+
+      }
+    }
+  }
+
+  .add_address_btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    text-align: center;
+    margin-top: 40px;
+
+    .add_address_icon {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      background-size: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
 .submit_btn {
   margin-top: 45px;
+
   div {
     width: 270px;
     height: 43px;
@@ -100,6 +227,7 @@
     letter-spacing: 2px;
   }
 }
+
 .tooltip {
   text-align: center;
   margin-top: 17px;

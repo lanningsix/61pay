@@ -9,8 +9,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '*',
+      path: '/404',
       component: () => import('@/views/404')
+    },
+    {
+      path: '*',
+      component: () => import('@/views/404'),
+      redirect: '/home'
     },
     {
       path: '/home',
@@ -68,6 +73,12 @@ export default new Router({
       component: bankCard,
       meta: {
         title: '添加银行卡'
+      }
+    }, {
+      path: '/signUpSuccess',
+      component: () => import('@/views/signUpSuccess/index.vue'),
+      meta: {
+        title: '报名成功'
       }
     }
   ]
